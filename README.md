@@ -54,10 +54,8 @@ En sonunda, maksimum eşleme dizisi matching döndürülür ve ekrana yazdırıl
 Kod, java dilinde yazılmıştır ve Blossom algoritmasının mantığını kullanır. 
 Bu kod, 2D bir matrisi kullanarak bir grafik tanımlar. İki farklı düğüm arasında bir bağlantı varsa, matrisin ilgili hücresi 1 olur. 
 Bu kodda, önceden tanımlanmış bir grafik kullanılır.
-
 Daha sonra, blossomAlgorithm metodu çağrılır ve maksimum eşleme bulunmaya çalışılır. 
 Bu metod, grafikteki her düğüm için findAugmentingPath metodunu çağırır. findAugmentingPath metodu, 
 verilen düğüme komşu olan diğer düğümlere bakar ve bir artırıcı yol bulmaya çalışır. Eğer bir artırıcı yol bulunursa, eşleme yapılır.
-
 Son olarak, maksimum eşleme dizisi matching döndürülür ve ekrana yazdırılır.
 
