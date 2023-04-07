@@ -33,3 +33,31 @@ En iyi durum karmaşıklığı ise, eşleştirmenin başlangıçta yapılması d
 Blossom algoritmasının zaman karmaşıklığı, artan yolları bulmak için kullanılan Breadth-First Search (BFS) algoritmasının zaman karmaşıklığına dayanmaktadır. 
 BFS, genellikle grafikteki düğümlerin sayısına ve kenarların sayısına bağlı olarak O(V+E) zaman karmaşıklığına sahiptir. Bu nedenle, Blossom algoritmasının en kötü durum zaman karmaşıklığı O(V^3) olurken, 
 ortalama durum karmaşıklığı O(EV^2) veya O(E^2V^2/3) olabilmektedir.
+
+
+YÖNERGELER ve KODUN AÇIKLAMASI --->>>
+Bu kodu kullanmak ve test etmek için, Java programlama dilini destekleyen bir IDE (Integrated Development Environment) kullanmanız gerekiyor. Örneğin, IntelliJ IDEA, Eclipse veya NetBeans gibi bir IDE kullanabilirsiniz.
+
+Kodu kopyalayıp, IDE'nize yeni bir Java projesi oluşturarak ekleyin. Ardından, kodu çalıştırın ve çıktıyı kontrol edin.
+
+AÇIKLAMA :
+
+BlossomAlgorithm adlı sınıf oluşturuldu. main metodu, kodun çalıştırılmasını sağlar.
+İlk olarak, verilen örnek grafik için bir 2D tamsayı dizisi oluşturulur. blossomAlgorithm metodu, grafikte 
+maksimum eşleme bulmak için çağrılır. İlk olarak, eşleme dizisi oluşturulur ve tüm değerler -1 olarak ayarlanır. 
+Bu, herhangi bir düğümün henüz eşleşmediğini gösterir. Daha sonra, grafikteki her düğüm için eşleme bulunmaya çalışılır. 
+Eğer düğüm henüz eşleşmemişse, findAugmentingPath metodu çağrılır. findAugmentingPath metodu, 
+verilen düğüme komşu olan diğer düğümlere bakar ve bir artırıcı yol bulmaya çalışır. Eğer eşleme bulunursa, 
+true döndürülür ve eşleme yapılır.
+Eşleme yapılana kadar tüm düğümler için findAugmentingPath metodu çağrılır.
+En sonunda, maksimum eşleme dizisi matching döndürülür ve ekrana yazdırılır.
+Kod, java dilinde yazılmıştır ve Blossom algoritmasının mantığını kullanır. 
+Bu kod, 2D bir matrisi kullanarak bir grafik tanımlar. İki farklı düğüm arasında bir bağlantı varsa, matrisin ilgili hücresi 1 olur. 
+Bu kodda, önceden tanımlanmış bir grafik kullanılır.
+
+Daha sonra, blossomAlgorithm metodu çağrılır ve maksimum eşleme bulunmaya çalışılır. 
+Bu metod, grafikteki her düğüm için findAugmentingPath metodunu çağırır. findAugmentingPath metodu, 
+verilen düğüme komşu olan diğer düğümlere bakar ve bir artırıcı yol bulmaya çalışır. Eğer bir artırıcı yol bulunursa, eşleme yapılır.
+
+Son olarak, maksimum eşleme dizisi matching döndürülür ve ekrana yazdırılır.
+
